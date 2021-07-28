@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University of St.Gallen
+% Interaction- and Communication-based Systems
+% https://interactions.ics.unisg.ch/
+%
+% LaTeX Template
+% Version 0.1 (21.05.2021) Iori Mizutani
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdffitwindow=true,      % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={PhD Proposal},% title
+    pdfauthor={I. Mizutani},% author
+    pdfproducer={Overleaf}, % producer of the document
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkbordercolor=red,    % color of internal links (change box color with linkbordercolor)
+    citebordercolor=green,  % color of links to bibliography
+    filebordercolor=magenta,% color of file links
+    urlbordercolor=cyan     % color of external links
+}
+\usepackage{ctable}
+\usepackage{url}
+\usepackage{lipsum}
+
+\newcommand{\placeholder}[1]{{\color{gray}{\textbf{Placeholder}:~#1}}}
+\newcommand{\revise}[1]{{\color{red}{#1}}}
+
+\begin{document}
+\begin{titlepage}
+
+ % Defines a new command for the horizontal lines, change thickness here
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\topmargin}{0in}
+ % Center everything on the page
+\center
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\hspace*{-0.5cm}
+\includegraphics[scale=0.1]{logos/hsg.png}\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.5\textwidth}
+\begin{flushright} \large
+\hspace*{2cm}
+\includegraphics[scale=0.3]{logos/interactions.png}\\
+\end{flushright}
+\end{minipage} \\[1cm]
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\Large Ph.D. programme in Computer Science (DCS)} \\[0.5cm] 
+\textsc{\Large Chair of Interaction- and Communication-based Systems} \\[0.5cm]
+\textsc{\LARGE University of St.Gallen}\\[2.0cm]
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.6cm]
+% Title of your document
+{ \huge \bfseries Your Proposal Title}\\[0.4cm] 
+\HRule \\[0.4cm]
+
+\textsc{\Large Research Proposal}
+
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+\vspace*{\fill}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{PhD Student:}\\
+% Your name
+Iori \textsc{Mizutani} \\ 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.5\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Simon \textsc{Mayer} \\
+Institute of Computer Science\\[0.5cm]
+\emph{Co-Supervisor(s):} \\
+To be determined
+%\emph{Other Supervisors} \\
+% \textsc{Add name here} % Supervisor's Name
+% Supervisor Department(s) or NHS Trust+section
+\end{flushright}
+\end{minipage}\\[2cm]
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+% Date, change the \today to a set date if you want to be precise
+{\large \today}
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\subsection*{Summary}
+
+\lipsum
+
+\newpage
+
+\input{sections/1-intro}
+\input{sections/2-relwork}
+\input{sections/3-goal}
+\input{sections/4-wp}
+\input{sections/5-impact}
+
+%**********************************************%
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{proposal}
+
+\end{document}
