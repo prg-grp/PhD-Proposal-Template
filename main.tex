@@ -1,3 +1,9 @@
+% !TEX program = pdflatex
+% !BIB program = biber
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+% !TeX root = main.tex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % University of St.Gallen
 % Interaction- and Communication-based Systems
@@ -15,6 +21,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
 \usepackage{graphicx}
 \usepackage[toc,page]{appendix}
 \usepackage{geometry}
@@ -140,8 +148,6 @@ To be determined
 \input{sections/5-impact}
 
 %**********************************************%
-\addcontentsline{toc}{section}{References}
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{proposal}
+\printbibliography
 
 \end{document}
